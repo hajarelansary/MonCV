@@ -1,4 +1,4 @@
-html, button,input, select,textarea {
+html, button,input, select,textarea , a {
     color: #444;
 }
 
@@ -80,8 +80,9 @@ footer{
 }
 
 
-
-
+hr{
+    background-color: #03045E;
+}
 
 .column {
     float: left;
@@ -94,4 +95,10 @@ footer{
     content: "";
     clear: both;
     display: table;
+  }
+
+  .col-content{
+    max-width: 950px;
+    display: table-cell;
+    width: 75%;
   }
