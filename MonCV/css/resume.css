@@ -1,0 +1,97 @@
+html, button,input, select,textarea {
+    color: #444;
+}
+
+html{
+    font-size: 1em;
+    line-height: 1.4 ;
+    background-color:  #CAF0F8;
+}
+
+#wrapper{
+    max-width: 900px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    border: 1px solid #ccc ;
+    border-radius: 3px;  
+    width: 180px; /* Width of new image */
+    height: 180px; 
+}
+
+header,footer{
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+h1{
+    font-family: dapifer, serif;
+    font-style: normal;
+    font-weight: 900;
+    color: #0077B6;
+    padding: 0px 23px;
+}
+h2{
+    font-family: sutro, serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #03045E;
+    padding: 0px 23px; 
+}
+
+
+hr, h3{
+    color: #0077B6;  
+}
+
+h4 {
+    font-family: sutro, serif;
+    font-style: normal;
+    font-weight: 200;
+    padding: 0px 23px;
+}
+
+#infos{
+    text-align: center;
+}
+
+dt{
+    font-weight: bold;
+}
+
+.second{
+    color: rgb(102, 101, 101);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+}
+
+section{
+    background-color: rgb(247, 244, 234);
+    padding: 0px 23px;
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+
+
+.column {
+    float: left;
+    width: 45%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
