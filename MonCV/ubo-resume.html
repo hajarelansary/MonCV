@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/resume.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -49,25 +51,37 @@
             <h3>Expériences professionnelles</h3>
             <p>
                 <dl>
-                    <dt >Stage PFA (projet de fin d'année)</dt>
+                    <dt >Stage PFA (projet de fin d'année)  
+                        <button onclick="showDetails()" id="btn" >
+                            Détails
+                        </button>
+                    </dt>
+                    <div id="details">
                         <dd class="second">AGRIDATA CONSULTING | Février-Juin 2022</dd>
-                        <dd >NodeJs, ExpressJs, Angular, Sequelize</dd>
-                        <dd >-Master 2 en développement informatique des systèmes
-                            d'information DOSI.
-                        </dd>
+                        <dd>NodeJs, ExpressJs, Angular, Sequelize</dd>                        
+                        <dd>-Conception et réalisation d'une application de gestion du parc
+                            informatique de l'entreprise, d'anticipation des remplacements
+                            matériels et renouvellement de licences logicielles.</dd>
+                    </div>
                     <br>
-                    <dt >Stage d'application</dt>
+                    <dt >Stage d'application
+                        <button onclick="showDetails2()" id="btn2" >
+                            Détails
+                        </button>
+                    </dt>
+                    <div id="details2">
                         <dd class="second">SYNERTEK | Juillet 2021</dd>
-                        <dd >Html, Css, php, JavaScript, Bootstrap, MySQL</dd>                        
+                        <dd>Html, Css, php, JavaScript, Bootstrap, MySQL</dd>                        
                         <dd>-Conception et développement d'une application web qui permet de
                             gérer les demandes de congés et absences en ligne, et de visualiser
                             le rendement des employés.</dd>
+                    </div>
                     <br>
                 </dl>
             </p>
         </section>
         <section>
-            <h3>Formation</h3>
+            <h3>Formations</h3>
             <p>
                 <dl class="row">
                     <dt class="col-sm-3">Master en Développement informatique</dt>
@@ -114,7 +128,9 @@
             <h3>Compétences</h3>
             <p>
                 <ul>
-                    <li>Base de données: MySQL, Oracle, Microsof Server.</li>
+                    <li id="tooltip">Base de données
+                        <p id="tooltip-text">MySQL, Oracle, Microsof Server.</p>
+                    </li>
                     <li>Langage de programmation: C, C++, Java, Java EE.</li>
                     <li>FRONT-END: HTML, CSS, JAVASCRIPT, Angular, Bootstrap.</li>
                     <li> BACK-END: Php, NodeJS, ExpressJS, Spring, Hibernate.</li>
