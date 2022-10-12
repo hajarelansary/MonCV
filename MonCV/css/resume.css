@@ -5,7 +5,8 @@ html, button,input, select,textarea , a {
 html{
     font-size: 1em;
     line-height: 1.4 ;
-    background-color:  #CAF0F8;
+    /*background-color:  #CAF0F8; */
+    background-color: rgb(253, 252, 248);
 }
 
 #wrapper{
@@ -22,10 +23,15 @@ img{
     border-radius: 3px;  
     width: 180px; /* Width of new image */
     height: 180px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 header,footer{
-    background-color: white;
+    /*background-color: white; */ 
+    background-image: url("../conception-fond-blanc-poly-faible_1017-33204.webp");
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
@@ -41,7 +47,8 @@ h2{
     font-style: normal;
     font-weight: 300;
     color: #03045E;
-    padding: 0px 23px; 
+    padding: 0px 23px;
+    background-color: #fff;
 }
 
 
@@ -71,8 +78,9 @@ dt{
 }
 
 section{
-    background-color: rgb(253, 252, 248);
+    background-color: #fff;
     padding: 0px 23px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 footer{
@@ -114,8 +122,9 @@ hr{
 
 /* styling of the tooltip display */
 p#tooltip-text {
-    position:absolute;
-    z-index: 0;
+    position:relative;
+    top: -60px;
+    z-index: 1;
     background:  #03045E;
     opacity: 0.8 ;
     padding: 4px;
@@ -125,6 +134,18 @@ p#tooltip-text {
     animation: fadeIn 0.10s;
     width:fit-content;
 }
+
+/* optional styling to add a "wedge" to the tooltip */
+p#tooltip-text:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border: 8px solid transparent;
+    border-top: 8px solid #03045E;
+  }
+  
 
 
 @keyframes fadeIn {
