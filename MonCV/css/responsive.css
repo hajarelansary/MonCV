@@ -1,5 +1,5 @@
 @media only screen and (max-width: 740px) {
-    /* For mobile phones: */
+    /* Pour les cellulaires : */
     [class*="col"] {
       width: 100%;
       display: inline;
@@ -15,3 +15,5 @@
       height: 20%;
     }
   }
+
+  

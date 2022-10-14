@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js" > </script>
 </head>
 <body>
     <div id="wrapper">
@@ -124,13 +125,30 @@
             <h3>Compétences</h3>
             <p>
                 <ul>
-                    <li id="tooltip">Base de données
-                        <p id="tooltip-text">MySQL, Oracle, Microsof Server.</p>
+                    <li>
+                        <div id="BDD "class="skill" style="cursor: pointer">  Base de données
+                            <span class="coupontooltip">MySQL, Oracle, Microsof Server.</span>
+                        </div>
                     </li>
-                    <li>Langage de programmation: C, C++, Java, Java EE.</li>
-                    <li>FRONT-END: HTML, CSS, JAVASCRIPT, Angular, Bootstrap.</li>
-                    <li> BACK-END: Php, NodeJS, ExpressJS, Spring, Hibernate.</li>
-                    <li> Modélisation de bases de données: UML, Merise.</li>
+                    <li>
+                        <div id="prog" class="skill" style="cursor: pointer"> Langage de programmation
+                            <span class="coupontooltip">C, C++, Java, Java EE.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="front" class="skill" style="cursor: pointer"> FRONT-END
+                            <span class="coupontooltip"> HTML, CSS, JAVASCRIPT, Angular, Bootstrap.</span>
+                        </div>
+                    </li>
+                    <li> 
+                        <div id="back" class="skill" style="cursor: pointer"> BACK-END
+                            <span class="coupontooltip"> Php, NodeJS, ExpressJS, Spring, Hibernate.</span>
+                        </div>
+                    </li>
+                    <li> 
+                        <div id="mod_bdd" class="skill" style="cursor: pointer"> Modélisation de bases de données
+                            <span class="coupontooltip"> UML, Merise.</span>
+                    </li>
                 </ul>
             </p>
         </section>
