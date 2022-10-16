@@ -146,6 +146,19 @@ hr{
     border: 8px solid transparent;
     border-bottom: 8px solid  #0077B6;
   }
+
+  .fa.fa-star {
+    float: right;
+  }
   
+  canvas{
+    width: 100%;
+      max-width: 600px;
+      margin: 0px auto;
+      display: block;
+      background-color: #fbfbfb;
+      padding: 30px;
+      border-radius: 14px;
+  }
 
 
