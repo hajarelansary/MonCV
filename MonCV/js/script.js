@@ -60,8 +60,76 @@ window.onload = () => {
         tooltip2[i].style.top = e.pageY + "px";
       }
     }
-  
 
-
+     //QUEST 7---------------------
+     const skillevaluation = {
+      MySQL: 5,
+      Oracle:3,
+      MongoDB:2,
+      C: 4,
+      Cpp: 3,
+      Java: 4,
+      Jee: 5,
+      php: 4,
+      NodeJS: 4,
+      ExpressJS: 5,
+      Spring: 3,
+      " ": 0
+    };
     
+    function addEvaluation(skillevaluation) {
+      //star
+      const star = document.createElement("span");
+      star.innerHTML = "<span class='fa fa-star'> </span>";
+      
+    
+      //span for all stars
+      for (var key in skillevaluation) {
+        var stars_span = document.createElement("span");
+        const span = document.createElement("span");
+        for (var i = 0; i < skillevaluation[key]; i++) {
+          stars_span.innerHTML += star.innerHTML;
+        }
+        span.appendChild(stars_span);
+        document.getElementById(key).appendChild(span);
+      }
+    }
+    addEvaluation(skillevaluation);
+
+    //QST 8-----------------------------------
+    var ctx = document.getElementById("myChart").getContext("2d");
+    console.log(Object.keys(skillevaluation));
+
+    new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: Object.keys(skillevaluation),
+        datasets: [{
+          /*backgroundColor: barColors,*/
+          data: Object.values(skillevaluation),
+          fill: false,
+          backgroundColor: "#0077B6",
+          borderColor: "#0077B6",
+          borderCapStyle: 'butt'
+        }]
+
+      },
+      options: {
+        legend: {display: false},
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 5
+          }
+      }
+
+    }
+  
+  });
+
   };
+
+
+
+   
