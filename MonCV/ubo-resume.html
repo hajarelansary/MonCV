@@ -7,6 +7,8 @@
     <meta name="desciption" content="web,developer,resume" /> 
     <meta name="keywords" content="EL ANSARY Hajar"/>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
     <title>Mon CV</title>
 
     <link rel="stylesheet" href="css/resume.css">
@@ -35,7 +37,6 @@
                 </div> 
             </div>
             <hr>
-            
         </header>
         <hr>
         <section>
@@ -126,35 +127,64 @@
             <p>
                 <ul>
                     <li>
-                        <div id="BDD "class="skill" style="cursor: pointer">  Base de données
-                            <span class="coupontooltip">MySQL, Oracle, Microsof Server.</span>
+                        <div>  Base de données
+                            <ul>
+                                <li id="MySQL" class="skill" style="cursor: pointer">MySQL
+                                    <span class="coupontooltip">MySQL est un système de gestion de bases de données relationnelles</span>
+                                </li>
+                                <li id="Oracle" class="skill" style="cursor: pointer">
+                                    Oracle
+                                    <span class="coupontooltip">Oracle Database est un système de gestion de base de données relationnelle</span>
+                                </li>
+                                <li id="MongoDB" class="skill" style="cursor: pointer">MongoDB
+                                    <span class="coupontooltip">MongoDB est un système de gestion de base de données orienté documents</span>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li>
-                        <div id="prog" class="skill" style="cursor: pointer"> Langage de programmation
-                            <span class="coupontooltip">C, C++, Java, Java EE.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="front" class="skill" style="cursor: pointer"> FRONT-END
-                            <span class="coupontooltip"> HTML, CSS, JAVASCRIPT, Angular, Bootstrap.</span>
+                        <div> Langage de programmation
+                            <ul>
+                                <li id="C" class="skill" style="cursor: pointer">C
+                                    <span class="coupontooltip">C est un langage de programmation impératif généraliste, de bas niveau</span>
+                                </li>
+                                <li id="Cpp" class="skill" style="cursor: pointer">C++
+                                    <span class="coupontooltip">C++ est une combinaison du langage de programmation procédural et orienté objet</span>
+                                </li>
+                                <li id="Java" class="skill" style="cursor: pointer"> Java
+                                    <span class="coupontooltip">Java permet de créer des applications complètes.</span>
+                                </li>
+                                <li id="Jee" class="skill" style="cursor: pointer">Java EE
+                                    <span class="coupontooltip">JEE présente des avantages tels que le multithreading, l'extensibilité, la gestion de la mémoire... </span>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li> 
-                        <div id="back" class="skill" style="cursor: pointer"> BACK-END
-                            <span class="coupontooltip"> Php, NodeJS, ExpressJS, Spring, Hibernate.</span>
+                        <div> BACK-END
+                            <ul>
+                                <li id="php" class="skill" style="cursor: pointer">Php
+                                    <span class="coupontooltip"> </span>
+                                </li>
+                                <li id="NodeJS" class="skill" style="cursor: pointer">NodeJS
+                                    <span class="coupontooltip"> </span>
+                                </li>
+                                <li id="ExpressJS" class="skill" style="cursor: pointer">ExpressJS
+                                    <span class="coupontooltip"> </span>
+                                </li>
+                                <li id="Spring" class="skill" style="cursor: pointer">Spring
+                                    <span class="coupontooltip"> </span>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li> 
-                        <div id="mod_bdd" class="skill" style="cursor: pointer"> Modélisation de bases de données
-                            <span class="coupontooltip"> UML, Merise.</span>
                     </li>
                 </ul>
             </p>
+            <canvas id="myChart" style="width:100%;max-width:600px; margin: 0 auto;"></canvas>
         </section>
         <section>
                 <div class="col-content">
-                        <h3>Langues</h3>
+                        <h3 id=" ">Langues</h3>
                         <p>
                             <ul>
                                 <li>ARABE: Langue maternelle</li>
